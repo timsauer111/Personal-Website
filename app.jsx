@@ -182,7 +182,7 @@ function App() {
            onClick={(e) => { if (e.target === e.currentTarget) setCvOpen(false); }}>
         <div className="cv-sheet" role="dialog" aria-modal="true" aria-label="Curriculum Vitae">
           <div className="cv-head">
-            <span className="title">Curriculum Vitae — Your Name</span>
+            <span className="title">Curriculum Vitae — Tim Sauer</span>
             <div className="actions">
               <button onClick={downloadCV} className="download">
                 <DownloadIcon /> Download PDF

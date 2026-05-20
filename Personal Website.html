@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Your Name — Personal Website</title>
+<title>Tim Sauer — CS Student, Developer & Athlete</title>
 
 <!-- Google Fonts: serve all tweakable pairings up front -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,6 @@
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -39,32 +38,31 @@
 
       <div class="hero-meta reveal">
         <span class="time" id="hero-clock">—:— local</span>
-        <span class="loc">City, Country &nbsp;·&nbsp; 00.00&deg; N, 00.00&deg; E</span>
+        <span class="loc">Bamberg, Germany &nbsp;·&nbsp; 49.89&deg; N, 10.89&deg; E</span>
       </div>
 
       <div class="hero-top">
-        <!-- Replace inner content with <img src="..." alt="..."> to drop in a real photo -->
-        <div class="hero-portrait reveal" aria-label="Photo of Your Name"></div>
+        <div class="hero-portrait reveal" aria-label="Photo of Tim Sauer"></div>
 
         <div>
           <div class="hero-shell reveal">
             <span class="prompt">&gt;</span>
             <span>whoami</span>
-            <span style="color:var(--ink-2)">&mdash; ML engineer &amp; researcher</span>
+            <span style="color:var(--ink-2)">&mdash; CS student, developer &amp; athlete</span>
             <span class="cursor" aria-hidden="true"></span>
           </div>
 
           <h1 class="hero-name reveal">
-            Your Name<span class="tag">ml</span><br>
-            building <em>useful</em> systems<br>
-            with neural networks.
+            Tim Sauer<span class="tag">dev</span><br>
+            building <em>useful</em> things<br>
+            with code and curiosity.
           </h1>
 
           <p class="hero-lead reveal">
-            I work on machine learning &mdash; somewhere between research
-            and production. Currently focused on large language models,
-            efficient training, and the unglamorous infrastructure
-            that makes models actually ship.
+            I study Applied Computer Science at the University of Bamberg,
+            build apps, and play basketball at a competitive level.
+            Currently focused on AI, app development, and turning
+            ideas into products that actually ship.
           </p>
 
           <div class="hero-actions reveal" style="margin-top:28px">
@@ -85,11 +83,8 @@
             </div>
 
             <div class="hero-socials" role="list">
-              <a href="#" role="listitem">GitHub</a>
-              <a href="#" role="listitem">Scholar</a>
-              <a href="#" role="listitem">arXiv</a>
-              <a href="#" role="listitem">Hugging Face</a>
-              <a href="#" role="listitem">LinkedIn</a>
+              <a href="https://github.com/timsauer111" role="listitem">GitHub</a>
+              <a href="https://linkedin.com/in/timsauer281" role="listitem">LinkedIn</a>
             </div>
           </div>
         </div>
@@ -104,7 +99,7 @@
 
       <header class="section-head reveal">
         <span class="eyebrow">01 — About</span>
-        <h2>A bit <em>about</em> me, and the problems I like to work on.</h2>
+        <h2>A bit <em>about</em> me, and the things that drive me.</h2>
       </header>
 
       <div class="about-grid">
@@ -112,40 +107,40 @@
 
         <div class="about-copy reveal">
           <p>
-            I'm a software engineer focused on machine learning. I like
-            problems that sit at the boundary between research and
-            production &mdash; where a clever idea has to survive contact
-            with real data, real latency budgets, and real users.
+            I'm a computer science student who builds things &mdash;
+            apps, automations, and anything where code meets a real
+            problem worth solving.
           </p>
           <p>
-            Over the last few years I've worked on large language models,
-            retrieval systems, and the training and serving infrastructure
-            that holds it all together. I care about reproducibility,
-            honest evaluation, and code that other people can actually
-            read six months later.
+            Alongside my studies at the University of Bamberg, I work
+            as a software developer and tutor for object-oriented
+            programming, teaching over 100 students each semester.
+            I care about clean code, efficient learning, and technology
+            that genuinely helps people.
           </p>
           <p>
-            Outside of work I read papers slowly, contribute to a couple
-            of open-source projects, and try to build small useful things
-            on the weekend.
+            When I'm not coding, I play basketball at a competitive
+            level in the 1st Regionalliga. The discipline and
+            structure from sport shapes how I approach everything
+            else &mdash; including software.
           </p>
 
           <dl class="fact-grid">
             <div class="fact">
               <dt>Based in</dt>
-              <dd>City, Country</dd>
+              <dd>Bamberg, Germany</dd>
             </div>
             <div class="fact">
-              <dt>Working since</dt>
-              <dd>20XX</dd>
+              <dt>Studying</dt>
+              <dd>B.Sc. Applied CS</dd>
             </div>
             <div class="fact">
               <dt>Focus areas</dt>
-              <dd>LLMs &middot; retrieval &middot; ML infra</dd>
+              <dd>AI &middot; App Dev &middot; Computer Vision</dd>
             </div>
             <div class="fact">
               <dt>Stack</dt>
-              <dd>Python, PyTorch, Rust, CUDA</dd>
+              <dd>Java, Python, Flutter, JavaScript</dd>
             </div>
           </dl>
         </div>
@@ -160,171 +155,78 @@
 
       <header class="section-head reveal">
         <span class="eyebrow">02 — Selected projects</span>
-        <h2>Things I've <em>built</em>, shipped, or open-sourced.</h2>
+        <h2>Things I've <em>built</em> or am currently working on.</h2>
       </header>
 
       <div class="work-list">
 
         <a class="work-item reveal" href="#">
-          <div class="work-thumb" data-tag="Library"></div>
+          <div class="work-thumb" data-tag="App"></div>
           <div class="work-info">
-            <span class="role">Open source &middot; Python / Rust</span>
-            <h3>fastfit</h3>
+            <span class="role">Founder &amp; Developer &middot; Flutter / Firebase</span>
+            <h3>TeachBack AI</h3>
             <p>
-              A small library for fine-tuning open-weight LLMs on a single
-              GPU. LoRA / QLoRA, gradient checkpointing, and a sane
-              default config that just works for &lt;7B models.
+              A mobile app that helps students learn using the Feynman
+              method. Explain concepts in your own words, get AI feedback,
+              and uncover knowledge gaps &mdash; real understanding instead
+              of surface-level memorization.
             </p>
             <div class="repo-stats">
-              <span>★ 1.2k</span>
-              <span>forks 87</span>
-              <span>MIT</span>
+              <span>Flutter</span>
+              <span>Firebase</span>
+              <span>App Store release planned</span>
             </div>
           </div>
           <div class="work-meta">
-            <span class="year">2024</span>
-            <span>github.com</span>
+            <span class="year">2026</span>
+            <span>In development</span>
           </div>
           <span class="work-arrow" aria-hidden="true">→</span>
         </a>
 
         <a class="work-item reveal" href="#">
-          <div class="work-thumb" data-tag="Research"></div>
+          <div class="work-thumb" data-tag="Website"></div>
           <div class="work-info">
-            <span class="role">Research engineer &middot; Pre-training</span>
-            <h3>Curriculum data mixing for small LMs</h3>
+            <span class="role">Personal project &middot; HTML / CSS / React</span>
+            <h3>Personal Website</h3>
             <p>
-              Investigated how the order and proportion of pre-training
-              data affects downstream performance on reasoning tasks.
-              Trained ~40 small models and wrote up the parts that
-              replicated cleanly.
+              This website &mdash; designed and built as a modern,
+              editorial-style portfolio with dark mode, scroll
+              animations, and a tweakable design system.
             </p>
             <div class="repo-stats">
-              <span>arXiv:2024.XXXXX</span>
-              <span>code released</span>
+              <span>Responsive</span>
+              <span>Custom CSS</span>
             </div>
           </div>
           <div class="work-meta">
-            <span class="year">2024</span>
-            <span>Lab / Company</span>
-          </div>
-          <span class="work-arrow" aria-hidden="true">→</span>
-        </a>
-
-        <a class="work-item reveal" href="#">
-          <div class="work-thumb" data-tag="Production"></div>
-          <div class="work-info">
-            <span class="role">ML engineer &middot; Retrieval &amp; serving</span>
-            <h3>Semantic search at $company</h3>
-            <p>
-              Replaced a keyword index with a hybrid dense / sparse
-              retrieval stack serving ~100M queries a day. Cut p99
-              latency in half and improved click-through on ambiguous
-              queries by a notable amount.
-            </p>
-            <div class="repo-stats">
-              <span>100M qps</span>
-              <span>p99 − 53%</span>
-            </div>
-          </div>
-          <div class="work-meta">
-            <span class="year">2023</span>
-            <span>Company</span>
-          </div>
-          <span class="work-arrow" aria-hidden="true">→</span>
-        </a>
-
-        <a class="work-item reveal" href="#">
-          <div class="work-thumb" data-tag="Side project"></div>
-          <div class="work-info">
-            <span class="role">Side project &middot; CLI / TUI</span>
-            <h3>paper-cli</h3>
-            <p>
-              A small terminal app for triaging arXiv papers. Pulls
-              from a few RSS feeds, summarises with a local model, and
-              lets me mark things to read later without opening a browser.
-            </p>
-            <div class="repo-stats">
-              <span>★ 340</span>
-              <span>weekend project</span>
-            </div>
-          </div>
-          <div class="work-meta">
-            <span class="year">2022</span>
+            <span class="year">2026</span>
             <span>Personal</span>
           </div>
           <span class="work-arrow" aria-hidden="true">→</span>
         </a>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ──────────────── PUBLICATIONS ──────────────── -->
-  <section id="publications" data-screen-label="04 Publications">
-    <div class="wrap">
-
-      <header class="section-head reveal">
-        <span class="eyebrow">03 — Publications</span>
-        <h2>Papers I've <em>written</em> or contributed to.</h2>
-      </header>
-
-      <div class="pubs-list">
-
-        <article class="pub-item reveal">
-          <div class="pub-year">2024</div>
-          <div class="pub-body">
-            <h4>Curriculum data mixing for small language models</h4>
-            <p class="pub-authors"><b>Your Name</b>, Coauthor A., Coauthor B., Senior Author</p>
-            <span class="pub-venue"><span class="venue-badge">NeurIPS&nbsp;'24</span> Conference on Neural Information Processing Systems</span>
+        <a class="work-item reveal" href="#">
+          <div class="work-thumb" data-tag="Automation"></div>
+          <div class="work-info">
+            <span class="role">Side project &middot; n8n / API</span>
+            <h3>n8n Workflows</h3>
+            <p>
+              Custom automation workflows connecting various tools
+              and services. From data pipelines to notification systems,
+              automating the repetitive so I can focus on what matters.
+            </p>
+            <div class="repo-stats">
+              <span>n8n</span>
+              <span>API integrations</span>
+            </div>
           </div>
-          <div class="pub-links">
-            <a class="pub-link" href="#">PDF</a>
-            <a class="pub-link" href="#">arXiv</a>
-            <a class="pub-link" href="#">Code</a>
-            <a class="pub-link" href="#">BibTeX</a>
+          <div class="work-meta">
+            <span class="year">2025</span>
+            <span>Personal</span>
           </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-year">2024</div>
-          <div class="pub-body">
-            <h4>Practical sparse retrieval for production search</h4>
-            <p class="pub-authors">Coauthor A., <b>Your Name</b>, Senior Author</p>
-            <span class="pub-venue"><span class="venue-badge">SIGIR&nbsp;'24</span> Workshop on Industrial IR</span>
-          </div>
-          <div class="pub-links">
-            <a class="pub-link" href="#">PDF</a>
-            <a class="pub-link" href="#">BibTeX</a>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-year">2023</div>
-          <div class="pub-body">
-            <h4>On the role of layer normalisation in small transformers</h4>
-            <p class="pub-authors"><b>Your Name</b>, Coauthor B.</p>
-            <span class="pub-venue"><span class="venue-badge">arXiv</span> Preprint &middot; under review</span>
-          </div>
-          <div class="pub-links">
-            <a class="pub-link" href="#">PDF</a>
-            <a class="pub-link" href="#">arXiv</a>
-            <a class="pub-link" href="#">BibTeX</a>
-          </div>
-        </article>
-
-        <article class="pub-item reveal">
-          <div class="pub-year">2022</div>
-          <div class="pub-body">
-            <h4>A short note on evaluation leakage in code benchmarks</h4>
-            <p class="pub-authors"><b>Your Name</b></p>
-            <span class="pub-venue"><span class="venue-badge">Blog</span> Technical write-up</span>
-          </div>
-          <div class="pub-links">
-            <a class="pub-link" href="#">Read</a>
-          </div>
-        </article>
+          <span class="work-arrow" aria-hidden="true">→</span>
+        </a>
 
       </div>
 
@@ -336,60 +238,93 @@
     <div class="wrap">
 
       <header class="section-head reveal">
-        <span class="eyebrow">04 — Experience</span>
+        <span class="eyebrow">03 — Experience</span>
         <h2>Where I've <em>spent</em> my time.</h2>
       </header>
 
       <div class="experience-list">
         <div class="xp-item reveal">
-          <div class="xp-year">2023 — Now</div>
+          <div class="xp-year">May 2026 — Oct 2026</div>
           <div class="xp-role">
-            <h4>Senior ML Engineer</h4>
-            <span class="company">Company Name</span>
+            <h4>Intern &mdash; Digital Twin Production Planning</h4>
+            <span class="company">Mercedes-Benz Tech Innovation, Stuttgart</span>
           </div>
           <p class="xp-desc">
-            Leading a small team working on retrieval and ranking models.
-            Owning the training pipeline end-to-end — data, evaluation,
-            and the boring parts that decide whether anything actually
-            ships.
+            Working on innovations in Digital Twin, Computer Vision
+            through Gaussian Splatting, and Machine Learning.
           </p>
         </div>
 
         <div class="xp-item reveal">
-          <div class="xp-year">2021 — 2023</div>
+          <div class="xp-year">Jun 2025 — Apr 2026</div>
           <div class="xp-role">
-            <h4>Research Engineer</h4>
-            <span class="company">Lab Name</span>
+            <h4>Working Student &mdash; Software Testing</h4>
+            <span class="company">mgm technology partners, Bamberg</span>
           </div>
           <p class="xp-desc">
-            Worked on pre-training experiments for small language models.
-            Wrote a lot of distributed training code, broke a few clusters,
-            and learned which experiments are worth running.
+            Optimizing internal test workflows by developing specialized
+            tools for systematic testing of products and their components.
           </p>
         </div>
 
         <div class="xp-item reveal">
-          <div class="xp-year">2019 — 2021</div>
+          <div class="xp-year">May 2025 — Apr 2026</div>
           <div class="xp-role">
-            <h4>Software Engineer</h4>
-            <span class="company">Earlier Company</span>
+            <h4>Teaching Assistant &mdash; OOP with Java</h4>
+            <span class="company">University of Bamberg, Chair of Information Systems</span>
           </div>
           <p class="xp-desc">
-            Backend services and the first ML-flavoured features in the
-            product. Picked up Rust on the job and never quite put it down.
+            Planning and delivering a new module: Object-Oriented
+            Programming with Java for ~120 students.
           </p>
         </div>
 
         <div class="xp-item reveal">
-          <div class="xp-year">2017 — 2019</div>
+          <div class="xp-year">Mar 2025 — Apr 2025</div>
           <div class="xp-role">
-            <h4>MSc, Computer Science</h4>
-            <span class="company">University Name</span>
+            <h4>Intern &mdash; Software Development &amp; Business Analysis</h4>
+            <span class="company">Coperitus, Coburg</span>
           </div>
           <p class="xp-desc">
-            Specialised in machine learning. Thesis on transfer learning
-            for low-resource NLP. Spent more time in the GPU queue than
-            the lecture hall.
+            30% reduction in release note creation time by developing an
+            automated ticket-to-version-control matching service with
+            ready-to-use summary output.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">Oct 2024 — Now</div>
+          <div class="xp-role">
+            <h4>B.Sc. Applied Computer Science</h4>
+            <span class="company">University of Bamberg</span>
+          </div>
+          <p class="xp-desc">
+            Top 3% of cohort, Dean's List 2026/27. Courses in AI,
+            Machine Learning, Algorithms, Statistics &amp; Data Science,
+            Robotics, and more.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">Aug 2023 — Aug 2024</div>
+          <div class="xp-role">
+            <h4>Voluntary Social Year</h4>
+            <span class="company">Freak City Bamberg e.V., Bamberg</span>
+          </div>
+          <p class="xp-desc">
+            Community engagement through sports before starting university.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">Sep 2015 — Jun 2023</div>
+          <div class="xp-role">
+            <h4>Abitur (GPA 1.5)</h4>
+            <span class="company">Gymnasium Ernestinum, Coburg</span>
+          </div>
+          <p class="xp-desc">
+            Awarded for outstanding achievements in Computer Science
+            by the Gesellschaft f&uuml;r Informatik e.V.
           </p>
         </div>
       </div>
@@ -402,47 +337,47 @@
     <div class="wrap">
 
       <header class="section-head reveal">
-        <span class="eyebrow">05 — Currently</span>
+        <span class="eyebrow">04 — Currently</span>
         <h2>What I'm <em>up to</em> right now.</h2>
       </header>
 
       <div class="now-grid">
         <div class="now-card reveal">
-          <h4>Working on</h4>
+          <h4>Building</h4>
           <p>
-            Better evaluations for retrieval-augmented systems
-            — the kind that don't fall over on real queries.
+            Shipping TeachBack AI and exploring
+            Computer Vision at Mercedes-Benz.
           </p>
           <ul>
-            <li>Faithfulness metrics</li>
-            <li>Long-context attention tricks</li>
-            <li>Inference cost &lt; quality trade-offs</li>
+            <li>TeachBack AI &rarr; App Store</li>
+            <li>Digital Twins &amp; CV</li>
+            <li>AI-powered workflows</li>
           </ul>
         </div>
 
         <div class="now-card reveal">
-          <h4>Reading</h4>
+          <h4>Learning</h4>
           <p>
-            A loosely-themed stack of papers on optimisation
-            and one book that is not about computers at all.
+            Deepening my knowledge in ML, exploring
+            agentic AI, and studying Russian on the side.
           </p>
           <ul>
-            <li>Recent Muon / Adam variants</li>
-            <li>A book on cities</li>
-            <li>Old systems papers</li>
+            <li>Machine Learning &amp; Computer Vision</li>
+            <li>Agentic AI &amp; LLMs</li>
+            <li>Russian language</li>
           </ul>
         </div>
 
         <div class="now-card reveal">
           <h4>Open to</h4>
           <p>
-            Interesting full-time roles, advisory work,
-            and the occasional research collaboration.
+            Interesting internships, collaborations,
+            and conversations about tech and AI.
           </p>
           <ul>
-            <li>ML engineering &amp; infra</li>
-            <li>LLM applications</li>
-            <li>Research collaborations</li>
+            <li>ML &amp; AI projects</li>
+            <li>App development</li>
+            <li>Open-source collaboration</li>
           </ul>
         </div>
       </div>
@@ -457,38 +392,31 @@
   <div class="wrap">
 
     <header class="section-head reveal">
-      <span class="eyebrow">06 — Contact</span>
+      <span class="eyebrow">05 — Contact</span>
       <h2>Let's <em>build</em> something.</h2>
     </header>
 
     <div class="contact-grid">
       <p class="contact-headline reveal">
         Drop a line at
-        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>,
+        <a href="mailto:mail@tim-sauer.com">mail@tim-sauer.com</a>,
         or find me <em>elsewhere</em>.
       </p>
 
       <div class="contact-details reveal">
         <div class="contact-block">
           <span class="label">Email</span>
-          <a class="val" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
-        </div>
-        <div class="contact-block">
-          <span class="label">Phone</span>
-          <a class="val" href="tel:+10000000000">+1 (000) 000 0000</a>
+          <a class="val" href="mailto:mail@tim-sauer.com">mail@tim-sauer.com</a>
         </div>
         <div class="contact-block">
           <span class="label">Based in</span>
-          <span class="val">City, Country</span>
+          <span class="val">Bamberg, Germany</span>
         </div>
         <div class="contact-block">
           <span class="label">Elsewhere</span>
           <div class="social-row">
-            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1.4a5.6 5.6 0 00-1.8 10.9c.3 0 .4-.1.4-.3v-1c-1.6.3-1.9-.7-1.9-.7-.3-.6-.6-.8-.6-.8-.5-.4 0-.4 0-.4.6 0 .9.6.9.6.5.9 1.4.6 1.7.5 0-.4.2-.6.4-.8-1.3-.1-2.6-.6-2.6-2.8 0-.6.2-1.1.6-1.5-.1-.2-.3-.8.1-1.6 0 0 .5-.2 1.6.6a5.4 5.4 0 012.8 0c1.1-.8 1.6-.6 1.6-.6.3.8.1 1.4 0 1.6.4.4.6.9.6 1.5 0 2.2-1.3 2.7-2.6 2.8.2.2.4.5.4 1v1.5c0 .2.1.3.4.3A5.6 5.6 0 007 1.4z"/></svg>GitHub</a>
-            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1L1 4l6 3 4-2v3.5h1V4L7 1zM4 7.6v2l3 1.4 3-1.4v-2L7 9 4 7.6z"/></svg>Google Scholar</a>
-            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 3h8M3.5 3v8h7V3M5.5 6l3 3M8.5 6l-3 3" stroke-linecap="round"/></svg>arXiv</a>
-            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM5 5.5a.8.8 0 11-1.6 0 .8.8 0 011.6 0zm5.6 0a.8.8 0 11-1.6 0 .8.8 0 011.6 0zM4.5 8.5c.5 1 1.4 1.5 2.5 1.5s2-.5 2.5-1.5h-5z"/></svg>Hugging Face</a>
-            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M2.5 5.3h2v6.5h-2V5.3zm1-3a1.2 1.2 0 110 2.3 1.2 1.2 0 010-2.3zM5.7 5.3h1.9v.9h.1c.3-.5 1-1 2-1 2 0 2.4 1.3 2.4 3v3.6h-2V8.6c0-.8 0-1.8-1.1-1.8s-1.3.9-1.3 1.7v3.3h-2V5.3z"/></svg>LinkedIn</a>
+            <a href="https://github.com/timsauer111"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1.4a5.6 5.6 0 00-1.8 10.9c.3 0 .4-.1.4-.3v-1c-1.6.3-1.9-.7-1.9-.7-.3-.6-.6-.8-.6-.8-.5-.4 0-.4 0-.4.6 0 .9.6.9.6.5.9 1.4.6 1.7.5 0-.4.2-.6.4-.8-1.3-.1-2.6-.6-2.6-2.8 0-.6.2-1.1.6-1.5-.1-.2-.3-.8.1-1.6 0 0 .5-.2 1.6.6a5.4 5.4 0 012.8 0c1.1-.8 1.6-.6 1.6-.6.3.8.1 1.4 0 1.6.4.4.6.9.6 1.5 0 2.2-1.3 2.7-2.6 2.8.2.2.4.5.4 1v1.5c0 .2.1.3.4.3A5.6 5.6 0 007 1.4z"/></svg>GitHub</a>
+            <a href="https://linkedin.com/in/timsauer281"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M2.5 5.3h2v6.5h-2V5.3zm1-3a1.2 1.2 0 110 2.3 1.2 1.2 0 010-2.3zM5.7 5.3h1.9v.9h.1c.3-.5 1-1 2-1 2 0 2.4 1.3 2.4 3v3.6h-2V8.6c0-.8 0-1.8-1.1-1.8s-1.3.9-1.3 1.7v3.3h-2V5.3z"/></svg>LinkedIn</a>
           </div>
         </div>
         <div class="contact-block">
@@ -502,7 +430,7 @@
     </div>
 
     <footer>
-      <span class="copy">© <span id="footer-year">2025</span> Your Name. All rights reserved.</span>
+      <span class="copy">© <span id="footer-year">2025</span> Tim Sauer. All rights reserved.</span>
       <span>Built with care.</span>
     </footer>
 
