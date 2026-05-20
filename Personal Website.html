@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-density="regular">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name — Personal Website</title>
+
+<!-- Google Fonts: serve all tweakable pairings up front -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ──────────────── NAV ──────────────── -->
+<nav class="nav" aria-label="Primary">
+  <a class="nav-mark" href="#hero">
+    <span class="dot" aria-hidden="true"></span>
+    <span id="nav-status-text">Available</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Projects</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="nav-theme" aria-label="Toggle dark mode"></button>
+</nav>
+
+<main>
+
+  <!-- ──────────────── HERO ──────────────── -->
+  <section id="hero" class="hero" data-screen-label="01 Hero">
+    <div class="wrap">
+
+      <div class="hero-meta reveal">
+        <span class="time" id="hero-clock">—:— local</span>
+        <span class="loc">City, Country &nbsp;·&nbsp; 00.00&deg; N, 00.00&deg; E</span>
+      </div>
+
+      <div class="hero-top">
+        <!-- Replace inner content with <img src="..." alt="..."> to drop in a real photo -->
+        <div class="hero-portrait reveal" aria-label="Photo of Your Name"></div>
+
+        <div>
+          <div class="hero-shell reveal">
+            <span class="prompt">&gt;</span>
+            <span>whoami</span>
+            <span style="color:var(--ink-2)">&mdash; ML engineer &amp; researcher</span>
+            <span class="cursor" aria-hidden="true"></span>
+          </div>
+
+          <h1 class="hero-name reveal">
+            Your Name<span class="tag">ml</span><br>
+            building <em>useful</em> systems<br>
+            with neural networks.
+          </h1>
+
+          <p class="hero-lead reveal">
+            I work on machine learning &mdash; somewhere between research
+            and production. Currently focused on large language models,
+            efficient training, and the unglamorous infrastructure
+            that makes models actually ship.
+          </p>
+
+          <div class="hero-actions reveal" style="margin-top:28px">
+            <div class="hero-cta-row">
+              <button class="btn btn-primary" data-action="open-cv">
+                <svg class="ico" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <rect x="2" y="1.5" width="10" height="11" rx="1.2" stroke="currentColor" stroke-width="1.3"></rect>
+                  <path d="M4.5 5h5M4.5 7.5h5M4.5 10h3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path>
+                </svg>
+                View CV
+              </button>
+              <a class="btn btn-ghost" href="#contact">
+                Get in touch
+                <svg class="ico" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+                  <path d="M3 7h8m0 0L7.5 3.5M11 7l-3.5 3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero-socials" role="list">
+              <a href="#" role="listitem">GitHub</a>
+              <a href="#" role="listitem">Scholar</a>
+              <a href="#" role="listitem">arXiv</a>
+              <a href="#" role="listitem">Hugging Face</a>
+              <a href="#" role="listitem">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── ABOUT ──────────────── -->
+  <section id="about" data-screen-label="02 About">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">01 — About</span>
+        <h2>A bit <em>about</em> me, and the problems I like to work on.</h2>
+      </header>
+
+      <div class="about-grid">
+        <div class="portrait reveal" data-label="Photo placeholder" aria-label="Portrait placeholder"></div>
+
+        <div class="about-copy reveal">
+          <p>
+            I'm a software engineer focused on machine learning. I like
+            problems that sit at the boundary between research and
+            production &mdash; where a clever idea has to survive contact
+            with real data, real latency budgets, and real users.
+          </p>
+          <p>
+            Over the last few years I've worked on large language models,
+            retrieval systems, and the training and serving infrastructure
+            that holds it all together. I care about reproducibility,
+            honest evaluation, and code that other people can actually
+            read six months later.
+          </p>
+          <p>
+            Outside of work I read papers slowly, contribute to a couple
+            of open-source projects, and try to build small useful things
+            on the weekend.
+          </p>
+
+          <dl class="fact-grid">
+            <div class="fact">
+              <dt>Based in</dt>
+              <dd>City, Country</dd>
+            </div>
+            <div class="fact">
+              <dt>Working since</dt>
+              <dd>20XX</dd>
+            </div>
+            <div class="fact">
+              <dt>Focus areas</dt>
+              <dd>LLMs &middot; retrieval &middot; ML infra</dd>
+            </div>
+            <div class="fact">
+              <dt>Stack</dt>
+              <dd>Python, PyTorch, Rust, CUDA</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── WORK ──────────────── -->
+  <section id="work" data-screen-label="03 Work">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">02 — Selected projects</span>
+        <h2>Things I've <em>built</em>, shipped, or open-sourced.</h2>
+      </header>
+
+      <div class="work-list">
+
+        <a class="work-item reveal" href="#">
+          <div class="work-thumb" data-tag="Library"></div>
+          <div class="work-info">
+            <span class="role">Open source &middot; Python / Rust</span>
+            <h3>fastfit</h3>
+            <p>
+              A small library for fine-tuning open-weight LLMs on a single
+              GPU. LoRA / QLoRA, gradient checkpointing, and a sane
+              default config that just works for &lt;7B models.
+            </p>
+            <div class="repo-stats">
+              <span>★ 1.2k</span>
+              <span>forks 87</span>
+              <span>MIT</span>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="year">2024</span>
+            <span>github.com</span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="work-item reveal" href="#">
+          <div class="work-thumb" data-tag="Research"></div>
+          <div class="work-info">
+            <span class="role">Research engineer &middot; Pre-training</span>
+            <h3>Curriculum data mixing for small LMs</h3>
+            <p>
+              Investigated how the order and proportion of pre-training
+              data affects downstream performance on reasoning tasks.
+              Trained ~40 small models and wrote up the parts that
+              replicated cleanly.
+            </p>
+            <div class="repo-stats">
+              <span>arXiv:2024.XXXXX</span>
+              <span>code released</span>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="year">2024</span>
+            <span>Lab / Company</span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="work-item reveal" href="#">
+          <div class="work-thumb" data-tag="Production"></div>
+          <div class="work-info">
+            <span class="role">ML engineer &middot; Retrieval &amp; serving</span>
+            <h3>Semantic search at $company</h3>
+            <p>
+              Replaced a keyword index with a hybrid dense / sparse
+              retrieval stack serving ~100M queries a day. Cut p99
+              latency in half and improved click-through on ambiguous
+              queries by a notable amount.
+            </p>
+            <div class="repo-stats">
+              <span>100M qps</span>
+              <span>p99 − 53%</span>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="year">2023</span>
+            <span>Company</span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="work-item reveal" href="#">
+          <div class="work-thumb" data-tag="Side project"></div>
+          <div class="work-info">
+            <span class="role">Side project &middot; CLI / TUI</span>
+            <h3>paper-cli</h3>
+            <p>
+              A small terminal app for triaging arXiv papers. Pulls
+              from a few RSS feeds, summarises with a local model, and
+              lets me mark things to read later without opening a browser.
+            </p>
+            <div class="repo-stats">
+              <span>★ 340</span>
+              <span>weekend project</span>
+            </div>
+          </div>
+          <div class="work-meta">
+            <span class="year">2022</span>
+            <span>Personal</span>
+          </div>
+          <span class="work-arrow" aria-hidden="true">→</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── PUBLICATIONS ──────────────── -->
+  <section id="publications" data-screen-label="04 Publications">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">03 — Publications</span>
+        <h2>Papers I've <em>written</em> or contributed to.</h2>
+      </header>
+
+      <div class="pubs-list">
+
+        <article class="pub-item reveal">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <h4>Curriculum data mixing for small language models</h4>
+            <p class="pub-authors"><b>Your Name</b>, Coauthor A., Coauthor B., Senior Author</p>
+            <span class="pub-venue"><span class="venue-badge">NeurIPS&nbsp;'24</span> Conference on Neural Information Processing Systems</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="#">PDF</a>
+            <a class="pub-link" href="#">arXiv</a>
+            <a class="pub-link" href="#">Code</a>
+            <a class="pub-link" href="#">BibTeX</a>
+          </div>
+        </article>
+
+        <article class="pub-item reveal">
+          <div class="pub-year">2024</div>
+          <div class="pub-body">
+            <h4>Practical sparse retrieval for production search</h4>
+            <p class="pub-authors">Coauthor A., <b>Your Name</b>, Senior Author</p>
+            <span class="pub-venue"><span class="venue-badge">SIGIR&nbsp;'24</span> Workshop on Industrial IR</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="#">PDF</a>
+            <a class="pub-link" href="#">BibTeX</a>
+          </div>
+        </article>
+
+        <article class="pub-item reveal">
+          <div class="pub-year">2023</div>
+          <div class="pub-body">
+            <h4>On the role of layer normalisation in small transformers</h4>
+            <p class="pub-authors"><b>Your Name</b>, Coauthor B.</p>
+            <span class="pub-venue"><span class="venue-badge">arXiv</span> Preprint &middot; under review</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="#">PDF</a>
+            <a class="pub-link" href="#">arXiv</a>
+            <a class="pub-link" href="#">BibTeX</a>
+          </div>
+        </article>
+
+        <article class="pub-item reveal">
+          <div class="pub-year">2022</div>
+          <div class="pub-body">
+            <h4>A short note on evaluation leakage in code benchmarks</h4>
+            <p class="pub-authors"><b>Your Name</b></p>
+            <span class="pub-venue"><span class="venue-badge">Blog</span> Technical write-up</span>
+          </div>
+          <div class="pub-links">
+            <a class="pub-link" href="#">Read</a>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── EXPERIENCE ──────────────── -->
+  <section id="experience" data-screen-label="04 Experience">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">04 — Experience</span>
+        <h2>Where I've <em>spent</em> my time.</h2>
+      </header>
+
+      <div class="experience-list">
+        <div class="xp-item reveal">
+          <div class="xp-year">2023 — Now</div>
+          <div class="xp-role">
+            <h4>Senior ML Engineer</h4>
+            <span class="company">Company Name</span>
+          </div>
+          <p class="xp-desc">
+            Leading a small team working on retrieval and ranking models.
+            Owning the training pipeline end-to-end — data, evaluation,
+            and the boring parts that decide whether anything actually
+            ships.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">2021 — 2023</div>
+          <div class="xp-role">
+            <h4>Research Engineer</h4>
+            <span class="company">Lab Name</span>
+          </div>
+          <p class="xp-desc">
+            Worked on pre-training experiments for small language models.
+            Wrote a lot of distributed training code, broke a few clusters,
+            and learned which experiments are worth running.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">2019 — 2021</div>
+          <div class="xp-role">
+            <h4>Software Engineer</h4>
+            <span class="company">Earlier Company</span>
+          </div>
+          <p class="xp-desc">
+            Backend services and the first ML-flavoured features in the
+            product. Picked up Rust on the job and never quite put it down.
+          </p>
+        </div>
+
+        <div class="xp-item reveal">
+          <div class="xp-year">2017 — 2019</div>
+          <div class="xp-role">
+            <h4>MSc, Computer Science</h4>
+            <span class="company">University Name</span>
+          </div>
+          <p class="xp-desc">
+            Specialised in machine learning. Thesis on transfer learning
+            for low-resource NLP. Spent more time in the GPU queue than
+            the lecture hall.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── NOW ──────────────── -->
+  <section id="now" data-screen-label="06 Now">
+    <div class="wrap">
+
+      <header class="section-head reveal">
+        <span class="eyebrow">05 — Currently</span>
+        <h2>What I'm <em>up to</em> right now.</h2>
+      </header>
+
+      <div class="now-grid">
+        <div class="now-card reveal">
+          <h4>Working on</h4>
+          <p>
+            Better evaluations for retrieval-augmented systems
+            — the kind that don't fall over on real queries.
+          </p>
+          <ul>
+            <li>Faithfulness metrics</li>
+            <li>Long-context attention tricks</li>
+            <li>Inference cost &lt; quality trade-offs</li>
+          </ul>
+        </div>
+
+        <div class="now-card reveal">
+          <h4>Reading</h4>
+          <p>
+            A loosely-themed stack of papers on optimisation
+            and one book that is not about computers at all.
+          </p>
+          <ul>
+            <li>Recent Muon / Adam variants</li>
+            <li>A book on cities</li>
+            <li>Old systems papers</li>
+          </ul>
+        </div>
+
+        <div class="now-card reveal">
+          <h4>Open to</h4>
+          <p>
+            Interesting full-time roles, advisory work,
+            and the occasional research collaboration.
+          </p>
+          <ul>
+            <li>ML engineering &amp; infra</li>
+            <li>LLM applications</li>
+            <li>Research collaborations</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ──────────────── CONTACT ──────────────── -->
+<section id="contact" class="contact" data-screen-label="07 Contact">
+  <div class="wrap">
+
+    <header class="section-head reveal">
+      <span class="eyebrow">06 — Contact</span>
+      <h2>Let's <em>build</em> something.</h2>
+    </header>
+
+    <div class="contact-grid">
+      <p class="contact-headline reveal">
+        Drop a line at
+        <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>,
+        or find me <em>elsewhere</em>.
+      </p>
+
+      <div class="contact-details reveal">
+        <div class="contact-block">
+          <span class="label">Email</span>
+          <a class="val" href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+        </div>
+        <div class="contact-block">
+          <span class="label">Phone</span>
+          <a class="val" href="tel:+10000000000">+1 (000) 000 0000</a>
+        </div>
+        <div class="contact-block">
+          <span class="label">Based in</span>
+          <span class="val">City, Country</span>
+        </div>
+        <div class="contact-block">
+          <span class="label">Elsewhere</span>
+          <div class="social-row">
+            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1.4a5.6 5.6 0 00-1.8 10.9c.3 0 .4-.1.4-.3v-1c-1.6.3-1.9-.7-1.9-.7-.3-.6-.6-.8-.6-.8-.5-.4 0-.4 0-.4.6 0 .9.6.9.6.5.9 1.4.6 1.7.5 0-.4.2-.6.4-.8-1.3-.1-2.6-.6-2.6-2.8 0-.6.2-1.1.6-1.5-.1-.2-.3-.8.1-1.6 0 0 .5-.2 1.6.6a5.4 5.4 0 012.8 0c1.1-.8 1.6-.6 1.6-.6.3.8.1 1.4 0 1.6.4.4.6.9.6 1.5 0 2.2-1.3 2.7-2.6 2.8.2.2.4.5.4 1v1.5c0 .2.1.3.4.3A5.6 5.6 0 007 1.4z"/></svg>GitHub</a>
+            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1L1 4l6 3 4-2v3.5h1V4L7 1zM4 7.6v2l3 1.4 3-1.4v-2L7 9 4 7.6z"/></svg>Google Scholar</a>
+            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 3h8M3.5 3v8h7V3M5.5 6l3 3M8.5 6l-3 3" stroke-linecap="round"/></svg>arXiv</a>
+            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M7 1.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM5 5.5a.8.8 0 11-1.6 0 .8.8 0 011.6 0zm5.6 0a.8.8 0 11-1.6 0 .8.8 0 011.6 0zM4.5 8.5c.5 1 1.4 1.5 2.5 1.5s2-.5 2.5-1.5h-5z"/></svg>Hugging Face</a>
+            <a href="#"><svg class="ico" viewBox="0 0 14 14" fill="currentColor" aria-hidden="true"><path d="M2.5 5.3h2v6.5h-2V5.3zm1-3a1.2 1.2 0 110 2.3 1.2 1.2 0 010-2.3zM5.7 5.3h1.9v.9h.1c.3-.5 1-1 2-1 2 0 2.4 1.3 2.4 3v3.6h-2V8.6c0-.8 0-1.8-1.1-1.8s-1.3.9-1.3 1.7v3.3h-2V5.3z"/></svg>LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <span class="label">CV</span>
+          <div class="social-row">
+            <a href="#" data-action="open-cv">View as PDF</a>
+            <a href="#" data-action="download-cv">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span class="copy">© <span id="footer-year">2025</span> Your Name. All rights reserved.</span>
+      <span>Built with care.</span>
+    </footer>
+
+  </div>
+</section>
+
+<!-- React mount point for the interactive layer (CV modal, tweaks, nav state) -->
+<div id="app-root"></div>
+
+<script>
+  // Footer year — kept inline so it doesn't depend on the React bundle
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+</script>
+
+<!-- React + Babel (pinned) -->
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="tweaks-panel.jsx"></script>
+<script type="text/babel" src="app.jsx"></script>
+
+</body>
+</html>
